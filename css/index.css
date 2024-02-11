@@ -4,6 +4,8 @@ body {
     color: #000000;
     margin: 0;
     padding: 0;
+    padding: 20px; 
+    line-height: 1.4; 
 }
 
 nav {
@@ -40,13 +42,31 @@ main {
     color: #000000;
 }
 
-h1, h2, h3 {
+
+h1 {
+    font-size: 2em; 
     color: #000000;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 1.5em; 
+    color: #000000;
+    margin-bottom: 10px; 
+}
+
+h3 {
+    font-size: 1.2em; 
+    color: #000000;
+    margin-bottom: 10px; 
 }
 
 p {
+    font-size: 1em; 
     color: #000000;
+    margin-bottom: 10px; 
 }
+
 
 
 .skip-link {

@@ -1,10 +1,13 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 20px;
+    line-height: 1.4; 
 }
+
 
 nav {
     background-color: #1f1f1f;
@@ -21,7 +24,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 nav ul li a {
@@ -30,23 +33,42 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    color: #fcfcfc; 
-    font-weight: bold; 
-    border-bottom: 2px solid #fcfcfc; 
+    color: #fcfcfc;
+    font-weight: bold;
+    border-bottom: 2px solid #fcfcfc;
 }
+
 
 main {
     padding: 20px;
     color: #000000;
 }
 
-h1, h2, h3 {
+h1 {
+    font-size: 2em; 
     color: #000000;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 1.5em; 
+    color: #000000;
+    margin-bottom: 10px; 
+}
+
+h3 {
+    font-size: 1.3em; 
+    color: #000000;
+    margin-bottom: 10px; 
+    margin-top: 10px;
 }
 
 p {
+    font-size: 1em; 
     color: #000000;
+    margin-bottom: 10px; 
 }
+
 
 article {
     background-color: #ffffff;
@@ -57,15 +79,28 @@ article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     justify-content: center;
     max-width: 600px;
-
 }
 
 article img {
-    max-width: 40%;
-    height: 40%;
-    display: block;
+    max-width: 70%;
+    height: auto; 
+    display: block; 
+    margin: 5%; 
     border-radius: 5px;
 }
+
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.pet-box.max { background-color: #F0A3A3; }
+.pet-box.alex { background-color: #A3D1F0; }
+.pet-box.vava { background-color: #A3F0D1; }
+.pet-box.tux { background-color: #F0E1A3; }
+.pet-box.angela { background-color: #D1A3F0; }
 
 .skip-link {
     position: absolute;
@@ -88,15 +123,3 @@ article img {
     text-align: center;
     border-radius: 5px;
 }
-
-.two-column-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.pet-box.max { background-color: #F0A3A3; }
-.pet-box.alex { background-color: #A3D1F0; }
-.pet-box.vava { background-color: #A3F0D1; }
-.pet-box.tux { background-color: #F0E1A3; }
-.pet-box.angela { background-color: #D1A3F0; }
